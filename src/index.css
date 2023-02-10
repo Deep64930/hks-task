@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+      background-color: theme('colors.white');
+      border-radius: theme('borderRadius.lg');
+      padding: theme('spacing.6');
+      box-shadow: theme('boxShadow.xl');
+    }
+    /* ... */
+  }
+
+
+img{
+    height: 40px;
+}
+
+html {
+ 
+    scroll-behavior: smooth;
+    font-family: "Montserrat" , sans-serif;
+}
+
+.navbar{
+   @apply flex justify-between items-center p-1 border border-blue-400 pr-5 pl-5 
+}
+.nav-link-logo{
+    @apply flex items-center pr-2
+}
+.nav-search {
+    @apply border flex rounded-lg items-center  bg-blue-500
+}
+.nav-icon {
+    @apply bg-blue-500 min-h-full
+}
